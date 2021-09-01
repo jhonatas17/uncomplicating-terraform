@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "ec2" {
-  source                  = "git@github.com:jhonatas17/uncomplicating-terraform.git?ref=v0.2"
+  source                  = "git@github.com:jhonatas17/uncomplicating-terraform.git"
   app_name                = "test01"
   instance_type           = "t3.micro"
   count                   = 2
